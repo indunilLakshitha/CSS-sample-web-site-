@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>index</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script type="text/javascript">
+        
+        
+        
+        </script>
+    </head>
+
+
+    <body>
+           <div class="wrapper">
+               <div class="top_bar">
+                   <div class="top_bar_links">
+                     <ul>
+                         <li><a href ="index.html">Home</a></li>
+                       <li><a href ="index.html">Log In</a></li>
+                         <li><a href ="signin.html">Sign In</a></li>
+                     </ul>
+
+
+
+                   </div>
+               </div>
+          
+
+        
+
+                 <header>
+
+                     <div class="title_section">
+                         <h1>Unknown Travel Guide</h1>
+                          <p>join with us and travel with us</p>
+                     </div>
+           </header>
+           <br><hr>
+
+         <div class="login">
+
+           <form class="uname_pword" name="f1">
+
+          Username : <input type="text" placeholder="enter ur username" name="uname">
+          <br>
+          <br>
+          <br>
+        
+          Password : <input type="password" placeholder="enter ur passwored" name="pword"><br><br>
+          <input type="button" value="Log In" onclick="check(this.form)">
+          <input type="button" value="Clear"  onclick="clean(this.form)">
+          <input type="button" value="Sign In" onclick="window.open('signin.html')">
+           </form>
+         </div>
+
+
+
+        </div> 
+        <script language="javascript">
+            function check(form)
+            {
+            
+             if(form.uname.value == "admin" && form.pword.value == "123")
+              {
+                window.open('Main.html')
+                window.close('index.html')
+              }
+             else
+             {
+               alert("Error Password or Username")
+              }
+            }
+
+            function clean(form)
+            {
+                form.uname.value=""
+                form.pword.value=""
+            }
+            </script>
+
+    </body>
+</html>

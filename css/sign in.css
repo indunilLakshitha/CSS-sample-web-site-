@@ -1,0 +1,33 @@
+.intro{
+    width: 900px;
+    display : inline-block;
+    margin: 100px;
+}
+
+
+.form_signin{
+    
+    background: yellow;
+   
+    padding: 10 10px;
+}
+
+
+.other{
+    
+
+    display : inline-block;
+    padding:10 10px;
+    
+    
+}
+
+
+.signin_form input,textarea{
+    padding: 5px;
+    margin-bottom: 5px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 0px;
+    background: whitesmoke;
+}

@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>sign in</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/sign in.css">
+
+        <script type="text/javascript">
+        
+        
+        
+        </script>
+    </head>
+
+
+    <body>
+        <div class="wrapper">
+            <div class="top_bar">
+                <div class="top_bar_links">
+                  <ul>
+                      <li><a href ="index.html">Home</a></li>
+                    <li><a href ="index.html">Log In</a></li>
+                      <li><a href ="signin.html">Sign In</a></li>
+                  </ul>
+
+
+
+                </div>
+        </div>
+       
+
+     
+
+               <header>
+
+                    <div class="title_section">
+                        <h1>Unknown Travel Guide</h1>
+                         <p>join with us and travel with us</p>
+                     </div>
+
+                </header>
+                <div class="intro">
+                    <div class="other">
+                        <!--img src="img/ravel_login_page.jpg"-->
+                        <img src="img/s.png">
+                    </div>
+                    
+
+                  <div class="form_signin">
+                      <form class="signin_form">
+                        <input type="text" placeholder="First Name" name="fname"><br>
+                         <input type="text" placeholder="Last Name" name="lname"><br>
+                         <input type="text" placeholder="Adress Line 1" name="al1"><br>
+                         <input type="text" placeholder="Adress Line 2" name="al2"><br>
+                         <input type="text" placeholder="Town" name="twn"><br>
+                         <input type="text" placeholder="Zip/Postal Code" name="zip"><br>
+                         <input type="text" placeholder="Country" name="cntry"><br>
+                           <input type="text" placeholder="Mobile Number" name="mobile"><br>
+                            <textarea cols="30" rows="10"placeholder="Comment" name="cmnt"></textarea><br>
+                           <button type="submit" onclick="check(this.form)" >Submit</button>
+                           <button type="reset" onclick="clean(this.form)">Clear</button>
+
+
+                        </form>
+                  
+                </div>
+            </div>
+       </div>
+      <script language="javascript">
+          function check(form){
+
+           if(form.fname.value==""){
+
+               if(form.al1.value==""){
+                   if(form.twn.value==""){
+                       
+                           if(form.cntry.value==""){
+                               alert("You Must Fill All The Fields")
+                           }
+                       
+                   }
+               }
+           }
+           else{
+
+               window.open("index.html")               
+           }
+
+
+          }
+
+
+          function clean(form){
+
+
+            form.al1.value==""
+            form.twn.value==""
+            form.fname.value==""
+            form.cntry.value==""
+            form.al2.value==""
+            form.lname.value==""
+            form.mobile.value==""
+            form.cmnt.value==""
+          }
+      
+      </script>
+
+
+    </body>
+
+</html>

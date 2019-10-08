@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Gallery</title>
+        <link rel="stylesheet" type="text/css" href="css/gallery.css">
+
+
+    <script type="text/javascript">
+    var track=1;
+        function change1(){
+            
+            var a =document.getElementById('d')
+            if(track ==1){
+
+          
+                a.src="img/d3.jpg"
+               track=2;
+
+            }else{
+                a.src="img/d.jpg"
+                track=1;
+            }
+
+
+
+        }
+        function change2(){
+          
+          var b =document.getElementById('d2')
+            if(track ==1){
+
+          
+                b.src="img/d6.jpg"
+               track=2;
+
+            }else{
+               b.src="img/d2.jpg"
+                track=1;
+            }
+
+        }
+        function change3(){
+         
+          var c =document.getElementById('d4')
+            if(track ==1){
+
+          
+                c.src="img/d7.jpg"
+               track=2;
+
+            }else{
+                c.src="img/d4.jpg"
+                track=1;
+            }
+
+        }
+        setTimeout('change1()',1500);
+        setTimeout('change2()',2000);
+        setTimeout('change3()',1500);
+    </script>
+    </head>
+
+
+    <body>
+           <div class="wrapper">
+                <div class="top_bar">
+                   <div class="top_bar_links">
+                     <ul>
+                         <li><a href ="main.html">Home</a></li>
+                       <!----li><a href ="">Log In</a></li-->
+                         <li><a href ="index.html">Sign Out</a></li>
+                     </ul>
+                   </div>
+               </div>
+               <header>
+
+                     <div class="title_section">
+                         <h1>Unknown Travel Guide</h1>
+                          <p>join with us and travel with us</p>
+                     </div>
+               </header>
+                   <br><hr>
+             <nav>
+              <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>  
+            </nav>
+
+        </div>
+
+        <table class="tb">
+            <tr>
+              <td><img src="img/d.jpg"id="d" onclick="change1()"></td>
+              <td><img src="img/d2.jpg" id="d2" onclick="change2()"></td>
+              <td><img src="img/d4.jpg" id="d4" onclick="change3()"></td>
+            </tr>
+            <tr>
+
+            </tr>
+
+
+        </table>
+    </body>
+</html>
